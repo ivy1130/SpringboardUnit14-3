@@ -4,10 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
+  <style>
+    img {
+      height: 200px;
+      margin: 10px;
+    }
+    #remove-button {
+      margin: 5px;
+    }
+  </style>
 </head>
 
 <body>
-
+<h1>Giphy Search</h1>
+<form action="" id="form">
+  <input type="text" id="form-input" placeholder="Enter GIPHY search">
+  <input id="search-button" type="submit" value="Search!">
+</form>
+<button id="remove-button">Remove Results</button>
+<div id="giphy-results">
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.js"></script>
 <script src="app.js"></script>
